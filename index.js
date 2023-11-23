@@ -15,14 +15,9 @@ const endorsementListEl = document.getElementById("endorsement-list");
 
 
 publishButtonEl.addEventListener("click", function() {
-    const textAreaValue = textAreaEl.value
+    let textAreaValue = textAreaEl.value
     
-    if(textAreaValue == "") {
-        return
-    }
-    else  {
-        push(endorsementListInDb, textAreaValue)}
-    
+    push(endorsementListInDb, textAreaValue)
 
     clearTextAreaEl()
 
